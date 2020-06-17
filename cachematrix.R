@@ -76,8 +76,7 @@ cacheSolve <- function(makeCacheMatrix.object, ...) {
         
         m <- makeCacheMatrix.object$getMatrix() ## get Matrix from
                                                 ## makeCacheMatrix object
-        
-<<<<<<< HEAD
+
         
         if(all(is.na(m))) { ## check if any matrix is stored in m
                        ## if not show a warning and finish execution with NA
@@ -86,8 +85,7 @@ cacheSolve <- function(makeCacheMatrix.object, ...) {
                 return(NA) ## just return NA
         }
         
-=======
->>>>>>> e4713aa649f7e402100030b2fd81a5a10f38fa84
+
         inv_m <- solve(m,...)                   ## use solve() to calculate
                                                 ## inverted matrix
         
